@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Kubernetes Cheat Sheet &#8212; Kubernetes - CKAD Templates</title>
+    <title>Kafta Documentation &#8212; Kafta Basics</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Imperative kubectl commands" href="commands-imperative.html" />
+    <link rel="next" title="Kafka Basics" href="commands.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -150,40 +150,13 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Kubernetes Cheat Sheet
+                    Kafta Documentation
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">kubectl commands</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">kafka basics</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="commands-imperative.html">Imperative <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands-edit.html">Editing resources with <code class="docutils literal notranslate"><span class="pre">kubectl</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands-manage.html">Monitoring resources with <code class="docutils literal notranslate"><span class="pre">kubectl</span></code></a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pods, ReplicaSets, and Deployments</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="pods.html"><code class="docutils literal notranslate"><span class="pre">Pods</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="replicasets.html"><code class="docutils literal notranslate"><span class="pre">ReplicaSets</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="deployments.html"><code class="docutils literal notranslate"><span class="pre">Deployments</span></code></a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Volumes</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="persistentvolumes_pvc.html"><code class="docutils literal notranslate"><span class="pre">PersistentVolume</span></code> and <code class="docutils literal notranslate"><span class="pre">PVC</span></code></a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Users and ClusterUsers</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="users.html"><code class="docutils literal notranslate"><span class="pre">Roles</span></code> and <code class="docutils literal notranslate"><span class="pre">Rolebindings</span></code> for <code class="docutils literal notranslate"><span class="pre">Users</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="clusterusers.html"><code class="docutils literal notranslate"><span class="pre">ClusterRoles</span></code> and <code class="docutils literal notranslate"><span class="pre">ClusterRolebindings</span></code> for <code class="docutils literal notranslate"><span class="pre">Users</span></code></a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ingress.html"><code class="docutils literal notranslate"><span class="pre">Ingress</span></code> and <code class="docutils literal notranslate"><span class="pre">NetworkPolicy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="liveness.html"><code class="docutils literal notranslate"><span class="pre">Readiness</span></code> and <code class="docutils literal notranslate"><span class="pre">Liveness</span></code> probes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="secret.html"><code class="docutils literal notranslate"><span class="pre">Secrets</span></code> and <code class="docutils literal notranslate"><span class="pre">SecurityContext</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="taintslabels.html">Taints, Tolerations, Labels, and Selectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="versioncontrol.html">Deployment strategy, Rollouts, and Rollbacks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jobs.html"><code class="docutils literal notranslate"><span class="pre">Jobs</span></code> and <code class="docutils literal notranslate"><span class="pre">CronJobs</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="helm.html"><code class="docutils literal notranslate"><span class="pre">Helm</span></code> configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Kafka Basics</a></li>
 </ul>
 
     </div>
@@ -367,7 +340,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Kubernetes Cheat Sheet</h1>
+    <h1>Kafta Documentation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,9 +350,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
 </ul>
             </nav>
         </div>
@@ -391,50 +362,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="kubernetes-cheat-sheet">
-<h1>Kubernetes Cheat Sheet<a class="headerlink" href="#kubernetes-cheat-sheet" title="Permalink to this headline">#</a></h1>
-<p>This documentation contains an overview of commonly used <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> commands and flags, and manifest templates for creating resources.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="kafta-documentation">
+<h1>Kafta Documentation<a class="headerlink" href="#kafta-documentation" title="Permalink to this headline">#</a></h1>
+<p>This documentation contains an overview of <code class="docutils literal notranslate"><span class="pre">Kafka</span></code>.</p>
 <section id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">kubectl commands</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">kafka basics</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="commands-imperative.html">Imperative <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands-edit.html">Editing resources with <code class="docutils literal notranslate"><span class="pre">kubectl</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands-manage.html">Monitoring resources with <code class="docutils literal notranslate"><span class="pre">kubectl</span></code></a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pods, ReplicaSets, and Deployments</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="pods.html"><code class="docutils literal notranslate"><span class="pre">Pods</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="replicasets.html"><code class="docutils literal notranslate"><span class="pre">ReplicaSets</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="deployments.html"><code class="docutils literal notranslate"><span class="pre">Deployments</span></code></a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Volumes</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="persistentvolumes_pvc.html"><code class="docutils literal notranslate"><span class="pre">PersistentVolume</span></code> and <code class="docutils literal notranslate"><span class="pre">PVC</span></code></a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Users and ClusterUsers</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="users.html"><code class="docutils literal notranslate"><span class="pre">Roles</span></code> and <code class="docutils literal notranslate"><span class="pre">Rolebindings</span></code> for <code class="docutils literal notranslate"><span class="pre">Users</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="clusterusers.html"><code class="docutils literal notranslate"><span class="pre">ClusterRoles</span></code> and <code class="docutils literal notranslate"><span class="pre">ClusterRolebindings</span></code> for <code class="docutils literal notranslate"><span class="pre">Users</span></code></a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="ingress.html"><code class="docutils literal notranslate"><span class="pre">Ingress</span></code> and <code class="docutils literal notranslate"><span class="pre">NetworkPolicy</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="liveness.html"><code class="docutils literal notranslate"><span class="pre">Readiness</span></code> and <code class="docutils literal notranslate"><span class="pre">Liveness</span></code> probes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="secret.html"><code class="docutils literal notranslate"><span class="pre">Secrets</span></code> and <code class="docutils literal notranslate"><span class="pre">SecurityContext</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="taintslabels.html">Taints, Tolerations, Labels, and Selectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="versioncontrol.html">Deployment strategy, Rollouts, and Rollbacks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jobs.html"><code class="docutils literal notranslate"><span class="pre">Jobs</span></code> and <code class="docutils literal notranslate"><span class="pre">CronJobs</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="helm.html"><code class="docutils literal notranslate"><span class="pre">Helm</span></code> configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Kafka Basics</a></li>
 </ul>
 </div>
 </section>
@@ -469,11 +405,11 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="commands-imperative.html"
+       href="commands.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Imperative <code class="docutils literal notranslate"><span class="pre">kubectl</span></code> commands</p>
+        <p class="prev-next-title">Kafka Basics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -492,9 +428,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
 </ul>
   </nav></div>
 
@@ -527,7 +461,7 @@ By Henrik A. Kjeldsberg
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 27, 2024.
+  Last updated on Mar 06, 2024.
   <br/>
 </p>
   </div>

@@ -1,9 +1,0 @@
-apiVersion: v1
-data:
-  ssh-privatekey: b2sK
-kind: Secret
-metadata:
-  creationTimestamp: null
-  name: my-secret
-  namespace: secret-ops
-type: kubernetes.io/ssh-auth

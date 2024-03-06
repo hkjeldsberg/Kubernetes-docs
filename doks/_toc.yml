@@ -5,33 +5,6 @@ format: jb-book
 root: index
 
 parts:
-  - caption: kubectl commands
+  - caption: kafka basics
     chapters:
-      - file: commands-imperative
-      - file: commands-edit
-      - file: commands-manage
-
-  - caption: Pods, ReplicaSets, and Deployments
-    chapters:
-      - file: pods
-      - file: replicasets
-      - file: deployments
-
-  - caption: Volumes
-    chapters:
-      - file: persistentvolumes_pvc
-
-  - caption: Users and ClusterUsers
-    chapters:
-      - file: users
-      - file: clusterusers
-
-  - caption: Misc
-    chapters:
-      - file: ingress
-      - file: liveness
-      - file: secret
-      - file: taintslabels
-      - file: versioncontrol
-      - file: jobs
-      - file: helm
+      - file: commands
