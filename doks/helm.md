@@ -36,7 +36,7 @@ And install chart using:
 helm install RELESE-NAME CHART-NAME
 ```
 And update charts:
-```consol
+```console
 helm upgrade [RELEASE] [CHART] [flags]
 ```
 
