@@ -1,4 +1,3 @@
-t l
 (cmd-imp)=
 
 # Kafka Basics
